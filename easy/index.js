@@ -13,3 +13,14 @@ function factorial(num){
   return num * factorial(num - 1);
 }
 console.log(factorial(6))
+
+
+// Sum of Array Elements
+// Write a function that takes an array of numbers and returns the sum of all elements.
+
+const arr = [1,2,3,4,5]
+function sumArray(arr) {
+  return arr.reduce((sum, num) => sum + num, 0);
+}
+
+console.log(sumArray(arr))
