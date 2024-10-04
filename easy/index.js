@@ -12,7 +12,7 @@ function factorial(num){
   if (num === 0 || num === 1) return 1;
   return num * factorial(num - 1);
 }
-console.log(factorial(6))
+// console.log(factorial(6))
 
 
 // Sum of Array Elements
@@ -23,4 +23,15 @@ function sumArray(arr) {
   return arr.reduce((sum, num) => sum + num, 0);
 }
 
-console.log(sumArray(arr))
+// console.log(sumArray(arr))
+
+
+// extension machine
+
+const arrOfNum = [1,2,3,4,5]
+
+const exMachine = (arr) => {
+  return arr.map(ob => ob + 5)
+}
+
+console.log(exMachine(arrOfNum))
