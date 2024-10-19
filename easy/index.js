@@ -12,79 +12,69 @@ function factorial(num) {
   if (num === 0 || num === 1) return 1;
   return num * factorial(num - 1);
 }
-// console.log(factorial(6))
 
-// Sum of Array Elements
-// Write a function that takes an array of numbers and returns the sum of all elements.
+const num = [100, 100, 200, 300, 400, 500];
 
-const arr = [1, 2, 3, 4, 5];
-function sumArray(arr) {
-  return arr.reduce((sum, num) => sum + num, 0);
-}
-
-// console.log(sumArray(arr))
-
-// extension machine
-
-const arrOfNum = [1, 2, 3, 4, 5];
-
-const exMachine = (arr) => {
-  return arr.map((ob) => ob + 5);
-};
-
-// console.log(exMachine(arrOfNum))
-
-// sum of all elements of an array
-
-const numbers = [10, 10, 20, 30, 40, 50];
-
-function sumArray(array) {
-  const res = numbers.reduce((acc, cur) => {
+// sum of array elements
+const sumArray = (arr) => {
+  const res = arr.reduce((acc, cur) => {
     return acc + cur;
   }, 0);
-  // return res
-  console.log(res)
-}
+  return res;
+};
 
-// sumArray(numbers)
+// find the largest number of an array
+const findMax = (arr) => {
+  const res = Math.max(...arr);
+  return res;
+};
 
-function findMax(arr){
-  return Math.max(... arr)
-}
+// find the smallest number of an array
+const smallestNum = (arr) => {
+  return Math.min(...arr);
+};
 
+// reverse an array elements
 const reverseArray = (arr) => {
-  return arr.reverse()
-}
+  return arr.slice().reverse();
+};
 
-function countOccurrences(arr, element){
-  return arr.filter((el) => el === element).length
-}
+// countOccurrences
+const countOccurrences = (arr, element) => {
+  const res = arr.filter((el) => el === element).length;
+  return res;
+};
 
+// removeDuplicates
 const removeDuplicates = (arr) => {
-  return [... new Set(arr)]
-}
+  return [...new Set(arr)]
+};
 
+// findIndex
 const findIndex = (arr, element) => {
-  return arr.indexOf(element)
+  const res = arr.indexOf(element)
+  return res
 }
 
-function areAllEven(arr){
-  return arr.every((el) => el % 2 === 0)
+// areAllEven
+const areAllEven = (arr) => {
+  const res = arr.every((el) => el % 2 === 0)
+  return res
 }
 
-let anotherArray = [100, 200,10, 50, [500, [700]]]
-
+// concatenateArrays
 const concatenateArrays = (arr1, arr2) => {
-  return arr1.concat(arr2)
+  // arr1.concat(arr2)
+  return [... arr1, ...arr2]
 }
 
-function flattenArray(arr){
-  return arr.flat(2)
+const flattenArray = (arr) => {
+  return arr.flat()
 }
 
-function arrayIntersection(arr1, arr2){
-  return arr1.filter((el) => arr2.includes(el))
+// arrayIntersection
+const arrayIntersection = (arr1, arr2) => {
+  const res = arr1.filter((el) => arr2.includes(el))
+  return res
 }
-console.log(arrayIntersection(anotherArray, numbers))
-
-
+console.log(arrayIntersection(num, [100, 500]));

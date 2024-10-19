@@ -37,3 +37,58 @@ const res = randomNum.reduce((acc, cur) => {
 
 
 console.log(res);
+
+
+
+
+function sumArray(array) {
+  const res = numbers.reduce((acc, cur) => {
+    return acc + cur;
+  }, 0);
+  // return res
+  console.log(res)
+}
+
+// sumArray(numbers)
+
+function findMax(arr){
+  return Math.max(... arr)
+}
+
+const reverseArray = (arr) => {
+  return arr.reverse()
+}
+
+function countOccurrences(arr, element){
+  return arr.filter((el) => el === element).length
+}
+
+const removeDuplicates = (arr) => {
+  return [... new Set(arr)]
+}
+
+const findIndex = (arr, element) => {
+  return arr.indexOf(element)
+}
+
+function areAllEven(arr){
+  return arr.every((el) => el % 2 === 0)
+}
+
+let anotherArray = [100, 200,10, 50, [500, [700]]]
+
+const concatenateArrays = (arr1, arr2) => {
+  return arr1.concat(arr2)
+}
+
+function flattenArray(arr){
+  return arr.flat(2)
+}
+
+function arrayIntersection(arr1, arr2){
+  return arr1.filter((el) => arr2.includes(el))
+}
+console.log(arrayIntersection(anotherArray, numbers))
+
+
+
