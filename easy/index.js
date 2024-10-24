@@ -78,3 +78,14 @@ const arrayIntersection = (arr1, arr2) => {
   return res
 }
 console.log(arrayIntersection(num, [100, 500]));
+
+const randomArr = [2, 3]
+const sumOfNums = (arr) => {
+  const res = arr.reduce((acc, val) => {
+    return acc + val
+  }, 0)
+
+  return res
+}
+
+console.log(sumOfNums(randomArr))
