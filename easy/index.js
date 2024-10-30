@@ -77,15 +77,18 @@ const arrayIntersection = (arr1, arr2) => {
   const res = arr1.filter((el) => arr2.includes(el))
   return res
 }
-console.log(arrayIntersection(num, [100, 500]));
+// console.log(arrayIntersection(num, [100, 500]));
 
-const randomArr = [2, 3]
-const sumOfNums = (arr) => {
-  const res = arr.reduce((acc, val) => {
-    return acc + val
-  }, 0)
+const randomArr = [2, 3, 11, 17, 21]
 
-  return res
+
+function sumOfNums(arr) {
+  let sum = 0
+  for(let i = 0; i < arr.length; i++){
+    sum = sum + arr[i]
+  }
+  return sum
 }
+
 
 console.log(sumOfNums(randomArr))
