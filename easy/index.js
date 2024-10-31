@@ -102,3 +102,29 @@ const findLargest = (arr) => {
 
 
 console.log(findLargest(randomArr))
+
+
+const books = [
+  { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+  { title: "1984", author: "George Orwell", year: 1949 },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 }
+];
+
+const getBookTitles = (books) => {
+  return books.map(book => book.title); // Map to an array of titles
+};
+
+// Calling the function and printing the result
+console.log(getBookTitles(books));
+
+
+
+
+
+
+
+
+
+// It hasn't been long since I was introduced to computer science - I never took it in school. However, going to university I did not have a clear direction to pursue, so I decided to go with it. It was love at first sight (or well, first print statement). My journey so far has been a rocky road, but hard work, determination, coffee, and an occasional game of billiards have allowed me to succeed both inside and outside the classroom.
+
+// Driven by a passion for Artificial Intelligence and Software Development, I place great emphasis on delivering quality results even in the most gruelling and strict environments.
