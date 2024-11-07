@@ -55,3 +55,20 @@ const findAndModifyAge = (peopleList, name, newAge) => {
 };
 
 
+// Largest word from array
+const heros = ["spiderman", "superman", "batman", "ironman"];
+
+const largestWord = (arr) => {
+  let largest = arr[0];
+  
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].length > largest.length) {
+      largest = arr[i];
+    }
+  }
+  
+  return largest;
+};
+
+console.log(largestWord(heros))
+
