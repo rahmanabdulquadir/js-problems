@@ -84,6 +84,20 @@ function reverseString(str){
 }
 
 
-console.log(reverseString("hello"))
+// console.log(reverseString("hello"))
+
+console.log(a)
+var a = 5
 
 
+const arr = [3, 3, 4, 4, 2]
+
+const removeDuplicate = (arr) => {
+  // return arr.filter((item, index) => arr.indexOf(item) === index)
+  return [... new Set(arr)]
+}
+
+console.log(removeDuplicate(arr))
+
+console.log("3" + 1 + 2)
+console.log("3"+1+2)
